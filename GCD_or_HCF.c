@@ -1,12 +1,14 @@
 #include<stdio.h>
 int main()
 {
-    int a,b,i,gcd;
-    scanf("%d%d",&a,&b);
-    for(i=1;i<=a && i<=b;i++)
+    int n,m,i,g,max; 
+    scanf("%d %d",&n,&m);
+    g=(n>m)?n:m; 
+    for(i=1;i<=g;i++) 
     {
-        if(a%i==0 && b%i==0)
-        gcd=i;
+        if(n%i==0&&m%i==0) 
+        max=i;
     }
-    printf("%d",gcd);
+    printf("%d",max);
+    
 }
