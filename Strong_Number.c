@@ -1,9 +1,9 @@
 #include<stdio.h>
 int main()
 {
-    int n,i,fac,r,s=0,temp;
+    int n,i,fac,s=0,t,r;
     scanf("%d",&n);
-    temp=n;
+    t=n;
     while(n)
     {
         i=1,fac=1;
@@ -12,18 +12,17 @@ int main()
         {
             fac=fac*i;
             i++;
-            
         }
         s=s+fac;
         n=n/10;
-    }
-    if(s==temp)
-    {
-        printf("The number %d is a strong number",temp);
         
+    }
+    if(s==t)
+    {
+        printf("The number %d is a strong number",t);
     }
     else
     {
-        printf("The number %d is not a strong number",temp);
+        printf("The number %d is not a strong number",t);
     }
 }
