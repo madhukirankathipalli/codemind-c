@@ -14,12 +14,10 @@ int main()
     if(f==6)
     {
         f=9;
-        
     }
     else if(s==6)
     {
         s=9;
-        
     }
     else if(t==6)
     {
