@@ -1,18 +1,17 @@
 #include<stdio.h>
-#include<math.h>
 int main()
 {
-    int n,d,i,k,max=-999;
-    scanf("%d",&n);
-    d=log10(n)+1;
-    i=1;
-    while(i<=d)
+    int num,reminder,largest= 0;
+    scanf("%d",&num);
+    while(num > 0)
     {
-        k=n%10;
-        if(k>max)
-        max=k;
-        n/=10;
-        i++;
+        reminder = num % 10;
+        if(largest<reminder)
+        {
+            largest=reminder;
+        }
+        num=num/10;
     }
-    printf("%d",max);
+    printf("%d",largest);
+    return 0;
 }
