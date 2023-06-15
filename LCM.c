@@ -1,16 +1,16 @@
 #include<stdio.h>
 int main()
-{ int a,b,l;
-scanf("%d %d",&a,&b);
-l=(a>b)?b:a;
-while(1) 
 {
-    if(l%a==0 && l%b==0)
+    int m,n,max;
+    scanf("%d%d",&m,&n);
+    max=(m>n)?m:n;
+    while(1)
     {
-        printf("%d",l); 
-        break;
-        } 
-        l++;
+        if(max%m==0 && max%n==0)
+        {
+            printf("%d",max);
+            break;
         }
-    
+        max++;
+    }
 }
